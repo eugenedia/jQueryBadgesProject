@@ -3,7 +3,7 @@ $(function() {
   // your code will go here
   $.ajax({
     url:'https://www.codeschool.com/users/1550944.json',
-    dataType: 'jsonp1',
+    dataType: 'jsonp',
     success: function(response){
       for (var i=0; i<response.courses.completed.length; i++){
         var course =  response.courses.completed[i];
