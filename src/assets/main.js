@@ -3,7 +3,7 @@ $(function() {
   // your code will go here
   $.ajax({
     url:'https://www.codeschool.com/users/1550944.json',
-    datatype: 'jsonp',
+    dataType: 'jsonp1',
     success: function(response){
       for (var i=0; i<response.courses.completed.length; i++){
         var course =  response.courses.completed[i];
@@ -13,7 +13,7 @@ $(function() {
         var link = $("<a href=\""+ course.url +"\" target = \"blank\" >See course</a>").addClass("btn btn-primary");
 
          courseDiv.append(link);
-         courseDiv.addClass('cource').appendTo("#badges");
+         courseDiv.addClass('course').appendTo("#badges");
       }
     }
   })
